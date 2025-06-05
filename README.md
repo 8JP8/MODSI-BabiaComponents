@@ -1,4 +1,16 @@
-# Aframe-babia-components
+# Aframe-babia-components (MODSIVR Adaptation)
+
+[![Version](http://img.shields.io/npm/v/aframe-babia-components.svg?style=flat-square)](https://npmjs.org/package/aframe-babia-components)
+[![License](http://img.shields.io/npm/l/aframe-babia-components.svg?style=flat-square)](https://npmjs.org/package/aframe-babia-components)
+**(Note: The badges above refer to the original `aframe-babia-components` package.)**
+
+This document describes a modified version of the `aframe-babia-components`. I have adapted these components for my VR project, **MODSIVR**.
+
+The primary modifications made were to enhance **labels customization** to better suit the requirements of the MODSIVR project.
+
+The original README and documentation for `aframe-babia-components` follows below, providing context for the base components. Please note that while the core functionality remains similar, specific aspects related to labels may differ in this adapted version due to the customizations made.
+
+---
 
 [![Version](http://img.shields.io/npm/v/aframe-babia-components.svg?style=flat-square)](https://npmjs.org/package/aframe-babia-components)
 [![License](http://img.shields.io/npm/l/aframe-babia-components.svg?style=flat-square)](https://npmjs.org/package/aframe-babia-components)
