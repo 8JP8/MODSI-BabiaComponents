@@ -1,19 +1,16 @@
-name: Node.js Build
+name: Build and Deploy to GitHub Pages
 
 on:
   push:
     branches:
-      - '**'
-  pull_request:
-    branches:
-      - '**'
+      - main  # Change if your default branch is different
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
+      - name: Checkout repository
         uses: actions/checkout@v3
 
       - name: Setup Node.js
@@ -24,5 +21,13 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Run build
+      - name: Build project
         run: npm run build
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          # Optional: keep history for pages or force push:
+          # force_orphan: true
