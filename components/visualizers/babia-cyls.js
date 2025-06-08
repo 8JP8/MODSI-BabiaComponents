@@ -281,7 +281,7 @@ let createCylinder = (self, cylEl, data, item, colorId, xLabel, posX, posZ, zLab
   if (data.legend) {
       if (!zLabel){
         cylEl.setAttribute('babia-cyl', {
-          'labelText': xLabel + '\nHeight: ' + item[data.height] + '\nRadius: ' + item[data.radius],
+          'labelText': xLabel + ': ' + item[data.height],
           'labelLookat': data.legend_lookat,
           'labelScale': data.legend_scale
         });
