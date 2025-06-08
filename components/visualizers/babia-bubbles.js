@@ -302,7 +302,7 @@ function generateBubble(height, radius, colorId, palette, positionX, positionZ, 
 }
 
 function generateLegend(data, bubble, bubbleEntity) {
-    let text = bubble[data.z_axis] + '\n'+ bubble[data.x_axis] + '\nValor:' + bubble[data.height];
+    let text = bubble[data.z_axis] + ' - '+ bubble[data.x_axis] + ': ' + bubble[data.height];
 
     let width = 2;
     if (text.length > 16)
